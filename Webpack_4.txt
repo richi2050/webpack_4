@@ -13,4 +13,14 @@ instalar las dependencias  de Webpack
  npm install webpack --save --save-exact = guarda solo la version exacta sin que se instale actualizaciones
  npm install webpack --save-dev = se instala en dependencia de desarrollo
 
+Creando nuestro primer bundle con Webpack
+ desde la version 4 webpack necesita un CLI
+ npm install webpack-cli --save-dev
+ webpack-cli =  nos ayuda a usar comando de webpack 
+ para verificar o saber los comando que podemos usar con webpack-cli usamos la siguiente linea
+ npx webpack-cli --help
 
+ npx webpack  --entry ./index.js  --output ./bundle.js
+ Aqui se indica que toda la entrada de archivo index.js  va a salir en el archivo bundle.js es decir compila todo el codigo javascript de index en build
+
+npx webpack  --entry ./index.js  --output ./bundle.js --mode development = aqui se pasa en modo desarrollo 
