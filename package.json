@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^4.41.2"
+  }
 }

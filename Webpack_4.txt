@@ -4,3 +4,13 @@
 		Se busca que la aplicación funcione, que sea rapida , que cumpla todas la necesidades, se actualice (escalable), responda a la interacción y al final sea un gran producto de calidad.
 	- Developer Experience
 		Escribir una aplicación de manera Eficiente,  generar un código totalmente limpio, Ampliar la tecnología para la resolución del problema, seguir un conjunto de reglas y convenciones, al salir a producción  la optimizacion del desarrollo.
+
+CLI = command-line interface.
+
+instalar las dependencias  de Webpack
+ npm i webpack --save = escritop corto
+ npm install webpack --save = escrito largo
+ npm install webpack --save --save-exact = guarda solo la version exacta sin que se instale actualizaciones
+ npm install webpack --save-dev = se instala en dependencia de desarrollo
+
+
