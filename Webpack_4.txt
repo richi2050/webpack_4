@@ -1,0 +1,6 @@
+- Introducción a Webpack
+	- Es un empaquetador de javascript, empaquedaro de módulos de JS
+	-User expirence:
+		Se busca que la aplicación funcione, que sea rapida , que cumpla todas la necesidades, se actualice (escalable), responda a la interacción y al final sea un gran producto de calidad.
+	- Developer Experience
+		Escribir una aplicación de manera Eficiente,  generar un código totalmente limpio, Ampliar la tecnología para la resolución del problema, seguir un conjunto de reglas y convenciones, al salir a producción  la optimizacion del desarrollo.
