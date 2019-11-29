@@ -56,6 +56,8 @@ o se genera un script dentro de package.jsom
 ------------------------------------------------------------------------------------------------------------------------
 
 Cargando configuraciones por defecto y personalizadas
+se configura el archivo de webpaclk con el nombre que uno quiera.
+
 Configuracion personal del webpack config  se genera el archivo en la siguiente ruta 
 
 en external se copian los archivos index.js y index.html
