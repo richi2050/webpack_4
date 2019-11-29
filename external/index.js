@@ -1,0 +1,1 @@
+console.log("Hola mundfo con webpack");

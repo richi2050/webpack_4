@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build" :"webpack"
+    "build": "webpack  --entry ./index.js  --output ./bundle.js --mode development",
+    "build_local": "webpack --mode production",
+    "build_external": "webpack --config ./external/inicialwebpack.config.js"
   },
   "keywords": [],
   "author": "",

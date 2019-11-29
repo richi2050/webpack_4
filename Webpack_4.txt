@@ -6,13 +6,14 @@
 		Escribir una aplicación de manera Eficiente,  generar un código totalmente limpio, Ampliar la tecnología para la resolución del problema, seguir un conjunto de reglas y convenciones, al salir a producción  la optimizacion del desarrollo.
 
 CLI = command-line interface.
-
+----------------------------------------------------------------------------------------------------------------------
 instalar las dependencias  de Webpack
  npm i webpack --save = escritop corto
  npm install webpack --save = escrito largo
  npm install webpack --save --save-exact = guarda solo la version exacta sin que se instale actualizaciones
  npm install webpack --save-dev = se instala en dependencia de desarrollo
 
+-----------------------------------------------------------------------------------------------------------------
 Creando nuestro primer bundle con Webpack
  desde la version 4 webpack necesita un CLI
  npm install webpack-cli --save-dev
@@ -25,6 +26,7 @@ Creando nuestro primer bundle con Webpack
 
 npx webpack  --entry ./index.js  --output ./bundle.js --mode development = aqui se pasa en modo desarrollo 
 
+----------------------------------------------------------------------------------------------------------
 
 Iniciando un webpack.config
 se genera un archivo webpack.config.js
@@ -50,3 +52,25 @@ o se genera un script dentro de package.jsom
     "test": "echo \"Error: no test specified\" && exit 1",
     "build" :"webpack"
   },
+
+------------------------------------------------------------------------------------------------------------------------
+
+Cargando configuraciones por defecto y personalizadas
+Configuracion personal del webpack config  se genera el archivo en la siguiente ruta 
+
+en external se copian los archivos index.js y index.html
+/external/inicialwebpack.config.js  
+
+const path = require('path');
+
+module.exports = {
+  entry: path.resolve(__dirname,'index.js')/* direccion relativa dopnde se encuentra el*/,
+  mode: 'development',
+  output: {
+    path: path.resolve(__dirname,'dist'), /*se configura en el lugar que se va a compilar */
+    filename: 'bundle.js'
+  }
+}
+
+la configuracion en elk webpack es la suiguiente 
+"build_external" :"webpack --config ./external/inicialwebpack.config.js"
