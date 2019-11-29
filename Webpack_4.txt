@@ -24,3 +24,29 @@ Creando nuestro primer bundle con Webpack
  Aqui se indica que toda la entrada de archivo index.js  va a salir en el archivo bundle.js es decir compila todo el codigo javascript de index en build
 
 npx webpack  --entry ./index.js  --output ./bundle.js --mode development = aqui se pasa en modo desarrollo 
+
+
+Iniciando un webpack.config
+se genera un archivo webpack.config.js
+ donde se pone el siguiente codigo 
+
+
+const path = require('path');  /*se instancoia el modulo de path de node*/
+
+/* El siguiente codigo en realidad es igual a lo siguiente */
+/* npx webpack  --entry ./index.js  --output ./bundle.js --mode development */
+module.exports = {
+  entry: './index.js',
+  mode: 'development',
+  output: {
+    path: path.resolve(__dirname), /*direccion relativca de posicion actual*/
+    filename: 'bundle.js'  /*nombre de bundel */
+  }
+}
+
+se ejecuta con npx webpack
+o se genera un script dentro de package.jsom
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build" :"webpack"
+  },
